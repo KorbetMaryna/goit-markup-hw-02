@@ -16,12 +16,12 @@
     --font-weight-extra-bold: 800;
     --font-weight-black: 900;
 
-    --line-height-biggest: 1.07143; /*--60px--*/
-    --line-height-big: 1.11111;     /*--40px--*/
-    --line-height-medium: 1.50;     /*--24px--*/
-    --line-height-logo: 1.16667;    /*--21px--*/
-    --line-height-small: 1.20;      /*--16px--*/
-    --line-height-micro: 1.16667;   /*--14px--*/
+    --line-height-biggest: 1.07143; 
+    --line-height-big: 1.11111;  
+    --line-height-medium: 1.50;     
+    --line-height-logo: 1.16667;    
+    --line-height-small: 1.20;      
+    --line-height-micro: 1.16667;   
 
     --letter-spacing-btn: 0.64px;
     --letter-spacing-logo: 0.54px;
@@ -46,6 +46,10 @@
 }
 
 /* ===============RESET BUILT-IN STYLES=============== */
+a {
+    font-style: normal;
+}
+
 .list {
     list-style: none;
 }
@@ -65,7 +69,6 @@ body {
 .logo-styles {
     font-family: var(--font-family-logo);
     font-size: var(--font-size-big-text);
-    /* font-style: normal; */
     font-weight: var(--font-weight-extra-bold);
     line-height: var(--line-height-logo);
     letter-spacing: var(--letter-spacing-logo);
@@ -85,7 +88,6 @@ body {
 /* Header 1 */
 .first-title {
     font-size: var(--font-size-first-title);
-    /* font-style: normal; */
     font-weight: var(--font-weight-bold);
     line-height: var(--line-height-biggest);
     letter-spacing: var(--letter-spacing-first-title);
@@ -95,7 +97,6 @@ body {
 /* Header 2 */
 .second-title {
     font-size: var(--font-size-second-title);
-    /* font-style: normal; */
     font-weight: var(--font-weight-bold);
     line-height: var(--line-height-big);
     letter-spacing: var(--letter-spacing-second-title);
@@ -106,7 +107,6 @@ body {
 /* Header 3 */
 .third-title {
     font-size: var(--font-size-third-title);
-    /* font-style: normal; */
     font-weight: var(--font-weight-medium);
     line-height: var(--line-height-medium);
     letter-spacing: var(--letter-spacing-third-title);
@@ -115,7 +115,6 @@ body {
 
 .main-text {
     font-size: var(--font-size-medium-text);
-    /* font-style: normal; */
     font-weight: var(--font-weight-regular);
     line-height: var(--line-height-medium);
     letter-spacing: var(--letter-spacing-text);
@@ -125,11 +124,10 @@ body {
 /* =============== HEADER STYLES=============== */ 
 .page-header-styles {
     font-size: var(--font-size-medium-text);
-    /* font-style: normal;   */
     line-height: var(--line-height-medium);
     letter-spacing: var(--letter-spacing-text);
     border-bottom: 1px solid var(--color-accent);
-    /* background-color: var(--color-white-background); */
+    background-color: var(--color-white-background);
 }
 
 .page-header-navigation {
@@ -147,12 +145,11 @@ body {
     background-color: var(--color-dark);
 }
 .page-footer-text {
-        font-size: var(--font-size-medium-text);
-        /* font-style: normal; */
-        font-weight: var(--font-weight-regular);
-        line-height: var(--line-height-medium);
-        letter-spacing: var(--letter-spacing-text);
-        color: var(--color-light)
+    font-size: var(--font-size-medium-text);
+    font-weight: var(--font-weight-regular);
+    line-height: var(--line-height-medium);
+    letter-spacing: var(--letter-spacing-text);
+    color: var(--color-light)
 }
 
 /* ===============STYLES INDEX.HTML=============== */
@@ -164,18 +161,16 @@ body {
     border-radius: 4px;
     background: var(--color-primary-brand);
         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-        color: var(--color-white-background)
+    color: var(--color-white-background)
 }
 
 /* ===============STYLES PORTFOLIO.HTML=============== */
-/* =====PROJECT SORTING BUTTONS STYLES===== */
 .project-sorting-styles {
     background-color: var(--color-white-background);
 }
 
 .project-sorting-btn {
     font-size: var(--font-size-medium-text);
-    /* font-style: normal; */
     font-weight: var(--font-weight-medium);
     line-height: var(--line-height-medium);
     letter-spacing: var(--letter-spacing-btn);
@@ -189,7 +184,6 @@ body {
     border-radius: 4px;
         background: var(--color-pressed-state);
         box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
-        color: var(--color-white-background);
-        
+    color: var(--color-white-background);
 }
 
