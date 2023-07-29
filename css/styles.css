@@ -1,13 +1,14 @@
 :root{
     /* =====TYPOGRAPHY===== */
-    --font-family-page: 'Roboto', sans-serif;
-    --font-family-logo: 'Raleway', sans-serif;
+    --font-family-page: "Roboto", sans-serif;
+    --font-family-logo: "Raleway", sans-serif;
 
+    --font-size-big-text: 18px;
     --font-size-medium-text: 16px;
     --font-size-small-text: 12px;
-    --font-size-big-title: 56px;
-    --font-size-medium-title: 36px;
-    --font-size-small-title: 20px;
+    --font-size-first-title: 56px;
+    --font-size-second-title: 36px;
+    --font-size-third-title: 20px;
 
     --font-weight-regular: 400;
     --font-weight-medium: 500;
@@ -15,11 +16,12 @@
     --font-weight-extra-bold: 800;
     --font-weight-black: 900;
 
-    --line-height-big: 60px;
-    --line-height-medium: 24px;
-    --line-height-logo: 21px;
-    --line-height-small: 16px;
-    --line-height-micro: 14px;
+    --line-height-biggest: 1.07143; /*--60px--*/
+    --line-height-big: 1.11111;     /*--40px--*/
+    --line-height-medium: 1.50;     /*--24px--*/
+    --line-height-logo: 1.16667;    /*--21px--*/
+    --line-height-small: 1.20;      /*--16px--*/
+    --line-height-micro: 1.16667;   /*--14px--*/
 
     --letter-spacing-btn: 0.64px;
     --letter-spacing-logo: 0.54px;
@@ -41,5 +43,153 @@
     --color-hero-background: #6D6D7B;
     --color-white-background: #FFFFFF;
     --color-modal-background: #FCFCFC;
+}
+
+/* ===============RESET BUILT-IN STYLES=============== */
+.list {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
+/* ===============INHERITED STYLES=============== */
+body {
+    font-family: var(--font-family-page);
+    background-color: var(--color-white-background);
+}
+
+/* ===============GENERAL STYLES=============== */
+/* Logo */
+.logo-styles {
+    font-family: var(--font-family-logo);
+    font-size: var(--font-size-big-text);
+    /* font-style: normal; */
+    font-weight: var(--font-weight-extra-bold);
+    line-height: var(--line-height-logo);
+    letter-spacing: var(--letter-spacing-logo);
+    text-transform: uppercase;
+    
+    color: var(--color-primary-brand);
+}
+
+.primary-brand-header {
+    color: var(--color-dark);
+}
+
+.primary-brand-footer {
+    color: var(--color-light);
+}
+
+/* Header 1 */
+.first-title {
+    font-size: var(--font-size-first-title);
+    /* font-style: normal; */
+    font-weight: var(--font-weight-bold);
+    line-height: var(--line-height-biggest);
+    letter-spacing: var(--letter-spacing-first-title);
+    color: var(--color-white-background);
+}
+
+/* Header 2 */
+.second-title {
+    font-size: var(--font-size-second-title);
+    /* font-style: normal; */
+    font-weight: var(--font-weight-bold);
+    line-height: var(--line-height-big);
+    letter-spacing: var(--letter-spacing-second-title);
+    text-transform: capitalize; 
+    color: var(--color-dark);
+}
+
+/* Header 3 */
+.third-title {
+    font-size: var(--font-size-third-title);
+    /* font-style: normal; */
+    font-weight: var(--font-weight-medium);
+    line-height: var(--line-height-medium);
+    letter-spacing: var(--letter-spacing-third-title);
+    color: var(--color-dark);
+}
+
+.main-text {
+    font-size: var(--font-size-medium-text);
+    /* font-style: normal; */
+    font-weight: var(--font-weight-regular);
+    line-height: var(--line-height-medium);
+    letter-spacing: var(--letter-spacing-text);
+    color: var(--color-text);
+}
+
+/* =============== HEADER STYLES=============== */ 
+.page-header-styles {
+    font-size: var(--font-size-medium-text);
+    /* font-style: normal;   */
+    line-height: var(--line-height-medium);
+    letter-spacing: var(--letter-spacing-text);
+    border-bottom: 1px solid var(--color-accent);
+    /* background-color: var(--color-white-background); */
+}
+
+.page-header-navigation {
+    font-weight: var(--font-weight-medium);
+    color: var(--color-dark);
+}
+
+.page-header-address {
+    font-weight: var(--font-weight-regular);
+    color: var(--color-text);
+}
+
+/* ===============FOOTER STYLES=============== */
+.page-footer-styles {
+    background-color: var(--color-dark);
+}
+.page-footer-text {
+        font-size: var(--font-size-medium-text);
+        /* font-style: normal; */
+        font-weight: var(--font-weight-regular);
+        line-height: var(--line-height-medium);
+        letter-spacing: var(--letter-spacing-text);
+        color: var(--color-light)
+}
+
+/* ===============STYLES INDEX.HTML=============== */
+.hero-styles {
+    background-color: var(--color-dark);
+}
+
+.hero-btn {
+    border-radius: 4px;
+    background: var(--color-primary-brand);
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+        color: var(--color-white-background)
+}
+
+/* ===============STYLES PORTFOLIO.HTML=============== */
+/* =====PROJECT SORTING BUTTONS STYLES===== */
+.project-sorting-styles {
+    background-color: var(--color-white-background);
+}
+
+.project-sorting-btn {
+    font-size: var(--font-size-medium-text);
+    /* font-style: normal; */
+    font-weight: var(--font-weight-medium);
+    line-height: var(--line-height-medium);
+    letter-spacing: var(--letter-spacing-btn);
+    color: var(--color-primary-brand);
+    list-style: none;
+    cursor: pointer;
+    border: none;
+}
+
+.actived-btn {
+    border-radius: 4px;
+        background: var(--color-pressed-state);
+        box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
+        color: var(--color-white-background);
+        
 }
 
