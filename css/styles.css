@@ -16,12 +16,12 @@
     --font-weight-extra-bold: 800;
     --font-weight-black: 900;
 
-    --line-height-biggest: 1.07143; 
-    --line-height-big: 1.11111;  
+    --line-height-biggest: 1.07; 
+    --line-height-big: 1.11;  
     --line-height-medium: 1.50;     
-    --line-height-logo: 1.16667;    
+    --line-height-logo: 1.17;    
     --line-height-small: 1.20;      
-    --line-height-micro: 1.16667;   
+    --line-height-micro: 1.17;   
 
     --letter-spacing-btn: 0.64px;
     --letter-spacing-logo: 0.54px;
@@ -62,6 +62,7 @@ a {
 body {
     font-family: var(--font-family-page);
     background-color: var(--color-white-background);
+    color: var(--color-text);
 }
 
 /* ===============GENERAL STYLES=============== */
@@ -73,7 +74,6 @@ body {
     line-height: var(--line-height-logo);
     letter-spacing: var(--letter-spacing-logo);
     text-transform: uppercase;
-    
     color: var(--color-primary-brand);
 }
 
@@ -121,6 +121,17 @@ body {
     color: var(--color-text);
 }
 
+.btn-properties:hover,
+.btn-properties:focus {
+    color: var(--color-white-background);
+    background-color: var(--color-pressed-state);
+}
+
+.link-properties:hover,
+.link-properties:focus .link-properties:active {
+    color: var(--color-pressed-state);
+}
+
 /* =============== HEADER STYLES=============== */ 
 .page-header-styles {
     font-size: var(--font-size-medium-text);
@@ -138,6 +149,7 @@ body {
 .page-header-address {
     font-weight: var(--font-weight-regular);
     color: var(--color-text);
+    font-style: normal;
 }
 
 /* ===============FOOTER STYLES=============== */
@@ -164,26 +176,37 @@ body {
     color: var(--color-white-background)
 }
 
-/* ===============STYLES PORTFOLIO.HTML=============== */
-.project-sorting-styles {
+.section-advantages-styles {
     background-color: var(--color-white-background);
+    text-align: center;
 }
 
+.section-doing-styles {
+    background-color: var(--color-white-background);
+    text-align: center;
+}
+
+.section-team-styles {
+    background-color: var(--color-light);
+    text-align: center;
+}
+
+/* ===============STYLES PORTFOLIO.HTML=============== */
 .project-sorting-btn {
+    font-family: var(--font-family-page);
     font-size: var(--font-size-medium-text);
     font-weight: var(--font-weight-medium);
     line-height: var(--line-height-medium);
     letter-spacing: var(--letter-spacing-btn);
     color: var(--color-primary-brand);
-    list-style: none;
+    background-color: var(--color-white-background);
     cursor: pointer;
     border: none;
 }
 
 .actived-btn {
     border-radius: 4px;
-        background: var(--color-pressed-state);
-        box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
-    color: var(--color-white-background);
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
 }
+
 
