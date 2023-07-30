@@ -132,6 +132,10 @@ body {
     color: var(--color-pressed-state);
 }
 
+.current {
+    color: var(--color-dark);
+}
+
 /* =============== HEADER STYLES=============== */ 
 .page-header-styles {
     font-size: var(--font-size-medium-text);
@@ -217,12 +221,16 @@ body {
 }
 
 .section-team-name {
+    font-size: var(--font-size-third-title);
+    font-weight: var(--font-weight-medium);
     line-height: var(--line-height-small);
+    letter-spacing: var(--letter-spacing-third-title);
+    color: var(--color-dark);
 }
 
 /* ===============STYLES PORTFOLIO.HTML=============== */
 
-.project-sorting-styles {
+.project-sorting-btn {
     font-family: var(--font-family-page);
     font-size: var(--font-size-medium-text);
     font-weight: var(--font-weight-medium);
@@ -230,9 +238,6 @@ body {
     letter-spacing: var(--letter-spacing-btn);
     cursor: pointer;
     border: none;
-}
-
-.project-sorting-btn {
     color: var(--color-primary-brand);
     background-color: var(--color-light);
 }
@@ -240,6 +245,14 @@ body {
 .actived-btn {
     color: var(--color-white-background);
     background-color: var(--color-pressed-state);
+}
+
+.section-projects-title {
+    font-size: var(--font-size-third-title);
+    font-weight: var(--font-weight-medium);
+    line-height: var(--line-height-small);
+    letter-spacing: var(--letter-spacing-third-title);
+    color: var(--color-dark);
 }
 
 
