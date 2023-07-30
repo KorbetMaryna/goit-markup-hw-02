@@ -132,21 +132,20 @@ body {
     color: var(--color-pressed-state);
 }
 
-.current {
-    color: var(--color-dark);
-}
-
 /* =============== HEADER STYLES=============== */ 
 .page-header-styles {
     font-size: var(--font-size-medium-text);
     line-height: var(--line-height-medium);
     letter-spacing: var(--letter-spacing-text);
-    border-bottom: 1px solid var(--color-accent);
     background-color: var(--color-white-background);
 }
 
 .page-header-navigation {
     font-weight: var(--font-weight-medium);
+    color: var(--color-dark);
+}
+
+.page-navigation-link {
     color: var(--color-dark);
 }
 
