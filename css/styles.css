@@ -132,6 +132,14 @@ body {
     color: var(--color-pressed-state);
 }
 
+.current-page {
+    color: var(--color-dark);
+}
+
+.current-page:focus {
+    color: var(--color-pressed-state);
+}
+
 /* =============== HEADER STYLES=============== */ 
 .page-header-styles {
     font-size: var(--font-size-medium-text);
@@ -148,8 +156,11 @@ body {
 
 .page-header-address {
     font-weight: var(--font-weight-regular);
-    color: var(--color-text);
     font-style: normal;
+}
+
+.page-header-address-list {
+    color: var(--color-text);
 }
 
 /* ===============FOOTER STYLES=============== */
@@ -167,18 +178,29 @@ body {
 /* ===============STYLES INDEX.HTML=============== */
 .hero-styles {
     background-color: var(--color-dark);
+    text-align: center;
 }
 
 .hero-btn {
-    border-radius: 4px;
-    background: var(--color-primary-brand);
-        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    color: var(--color-white-background)
+    font-family: var(--font-family-page);
+    font-weight: var(--font-weight-medium);
+    font-size: var(--font-size-medium-text);
+    line-height: var(--line-height-medium);
+    letter-spacing: var(--letter-spacing-btn);
+    background-color: var(--color-primary-brand);
+    color: var(--color-white-background);
+    cursor: pointer;
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+    color: var(--color-pressed-state);
 }
 
 .section-advantages-styles {
     background-color: var(--color-white-background);
     text-align: center;
+    line-height: var(--line-height-small);
 }
 
 .section-doing-styles {
@@ -191,6 +213,14 @@ body {
     text-align: center;
 }
 
+.section-team-title {
+    line-height: var(--line-height-small);
+}
+
+.section-team-list {
+    background-color: var(--color-white-background);
+}
+
 /* ===============STYLES PORTFOLIO.HTML=============== */
 .project-sorting-btn {
     font-family: var(--font-family-page);
@@ -199,14 +229,16 @@ body {
     line-height: var(--line-height-medium);
     letter-spacing: var(--letter-spacing-btn);
     color: var(--color-primary-brand);
-    background-color: var(--color-white-background);
+    background-color: var(--color-light);
     cursor: pointer;
     border: none;
 }
 
 .actived-btn {
-    border-radius: 4px;
-    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
+    color: var(--color-white-background);
+    background-color: var(--color-pressed-state);
 }
+
+
 
 
