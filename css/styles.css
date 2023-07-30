@@ -212,11 +212,7 @@ body {
 }
 
 .section-team-title {
-    font-size: var(--font-size-third-title);
-    font-weight: var(--font-weight-medium);
     line-height: var(--line-height-big);
-    letter-spacing: var(--letter-spacing-third-title);
-    color: var(--color-dark);
 }
 
 .section-team-card {
