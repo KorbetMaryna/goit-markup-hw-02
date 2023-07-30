@@ -128,15 +128,7 @@ body {
 }
 
 .link-properties:hover,
-.link-properties:focus .link-properties:active {
-    color: var(--color-pressed-state);
-}
-
-.current-page {
-    color: var(--color-dark);
-}
-
-.current-page:focus {
+.link-properties:focus {
     color: var(--color-pressed-state);
 }
 
@@ -194,12 +186,15 @@ body {
 
 .hero-btn:hover,
 .hero-btn:focus {
-    color: var(--color-pressed-state);
+    background-color: var(--color-pressed-state);
 }
 
 .section-advantages-styles {
     background-color: var(--color-white-background);
     text-align: center;
+}
+
+.section-advantages-title {
     line-height: var(--line-height-small);
 }
 
@@ -214,24 +209,32 @@ body {
 }
 
 .section-team-title {
-    line-height: var(--line-height-small);
+    line-height: var(--line-height-big);
 }
 
-.section-team-list {
+.section-team-card {
     background-color: var(--color-white-background);
 }
 
+.section-team-name {
+    line-height: var(--line-height-small);
+}
+
 /* ===============STYLES PORTFOLIO.HTML=============== */
-.project-sorting-btn {
+
+.project-sorting-styles {
     font-family: var(--font-family-page);
     font-size: var(--font-size-medium-text);
     font-weight: var(--font-weight-medium);
     line-height: var(--line-height-medium);
     letter-spacing: var(--letter-spacing-btn);
-    color: var(--color-primary-brand);
-    background-color: var(--color-light);
     cursor: pointer;
     border: none;
+}
+
+.project-sorting-btn {
+    color: var(--color-primary-brand);
+    background-color: var(--color-light);
 }
 
 .actived-btn {
